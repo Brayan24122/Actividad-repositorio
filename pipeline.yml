@@ -1,0 +1,25 @@
+name: Basic JavaScript y Explicacion de GitHub CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate-project:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout repositorio
+        uses: actions/checkout@v3
+
+      - name: 📁 Verificar estructura del proyecto
+        run: |
+          ls -R
+          test -f index.html || (echo "❌ Falta index.html" && exit 1)
+          test -f style.css || (echo "❌ Falta style.css" && exit 1)
+          test -f javascript.js || (echo "❌ Falta javascript.js" && exit 1)
+
+      - name: ✅ Finalizado correctamente
+        run: echo "Todo listo. Proyecto validado correctamente."
