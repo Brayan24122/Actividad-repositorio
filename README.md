@@ -8,6 +8,10 @@ Se crea un html, un javascript y un style para que se pueda crear la pagina, que
 Lo primero que se realizo es la creacion de un html para colocar la informacion basica sobre el uso de Githud, con esto se defino ¿Que es github?, ¿Para que sirve? y las ventajas que tiene de utilizarlo, y por ultimo se coloco un link para que puedan ir directamente a la pagina principal de Github.
 
 ---------------
+# funcionamiento 
+
+Git es un sistema de control de versiones que permite trabajar en equipo sobre un mismo proyecto de forma organizada. GitHub es una plataforma donde se alojan repositorios Git en línea, facilitando el trabajo colaborativo.
+
 
 # codigo
 
